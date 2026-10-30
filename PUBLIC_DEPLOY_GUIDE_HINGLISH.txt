@@ -1,0 +1,20 @@
+TREVNIXO — PUBLIC LIVE DEMO SETUP (FREE OPTION)
+
+IMPORTANT: This makes the same project deployable; it does NOT publish it automatically. You must use your own hosting account and press deploy. Never share your password with anyone.
+
+EASIEST ROUTE: Render (one service for frontend + backend)
+1. Open https://render.com and sign up/sign in.
+2. Open https://github.com and create a NEW private repository named trevnixo-college-demo.
+3. Upload the contents of this ZIP to that repository (not the ZIP file itself). Do not upload any .env file or real secrets.
+4. In Render choose New + -> Blueprint, connect your GitHub repository, and select render.yaml.
+5. Deploy. Wait for build to finish. If build fails, open the Logs and share the error text for troubleshooting.
+6. Open the Render URL it gives you, e.g. https://trevnixo-college-demo.onrender.com. Check /api/health; it should show JSON with ok:true.
+7. Open the same URL on your phone using mobile data to confirm it is public.
+
+ADMIN: Render generates ADMIN_TOKEN as an environment variable. Open Render service -> Environment to view it privately, then use it on /admin.html. Never share it publicly or put it into frontend code.
+
+DEMO NOTES
+- The payment flow is simulated only; no real money is charged. Never enter real card/UPI credentials.
+- Free hosting may sleep and take a little time to wake. A free instance's local JSON files may reset on redeploy/restart; this is a college demo, not production storage.
+- The public URL cannot be generated from this chat without access to your hosting account and your confirmation.
+- If GitHub upload/deploy is too slow, use the existing local demo tomorrow and keep both terminal windows open.
